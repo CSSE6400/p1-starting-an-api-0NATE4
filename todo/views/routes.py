@@ -53,3 +53,15 @@ def update_todo(id):
         "created_at": "2026-02-20T14:00:00",
         "updated_at": "2026-02-20T14:00:00"
     })
+
+@api.route('/todos/<int:id>', methods=['DELETE'])
+def delete_todo(id):
+    return jsonify({
+        "id": id,
+        "title": "Watch CSSE6400 Lecture",
+        "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
+        "completed": True,
+        "deadline_at": "2026-02-27T18:00:00",
+        "created_at": "2026-02-20T14:00:00",
+        "updated_at": "2026-02-20T14:00:00"
+    }), 200
