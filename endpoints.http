@@ -2,3 +2,27 @@
 
 ### Health
 GET {{baseUrl}}/api/v1/health
+
+### List All Todos
+GET {{baseUrl}}/api/v1/todos
+
+### Get a specific Todo
+GET {{baseUrl}}/api/v1/todos/1
+
+### Create Todo
+POST {{baseUrl}}/api/v1/todos
+Content-Type: application/json
+{
+    "title": "An example Todo",
+    "description": "This is an example Todo",
+}
+
+### Update Todo
+PUT {{baseUrl}}/api/v1/todos/1
+Content-Type: application/json
+{
+    "title": "Updated title",
+}
+
+### Delete Todo
+DELETE {{baseUrl}}/api/v1/todos/1
